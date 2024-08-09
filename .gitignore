@@ -22,5 +22,6 @@
 go.work
 authApp
 brokerApp
+loggerServiceApp
 .idea
 db-data
