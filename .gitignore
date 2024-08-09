@@ -23,5 +23,6 @@ go.work
 authApp
 brokerApp
 loggerServiceApp
+frontApp
 .idea
 db-data
