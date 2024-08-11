@@ -25,5 +25,6 @@ brokerApp
 loggerServiceApp
 frontApp
 mailerApp
+listenerApp
 .idea
 db-data
