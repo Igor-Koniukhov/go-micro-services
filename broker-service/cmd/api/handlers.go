@@ -14,6 +14,13 @@ type RequestPayload struct {
 	Log    LogPayload  `json:"log,omitempty"`
 }
 
+type MailPayload struct {
+	From    string `json:"from"`
+	To      string `json:"to"`
+	Subject string `json:"subject"`
+	Message string `json:"message"`
+}
+
 type AuthPayload struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`

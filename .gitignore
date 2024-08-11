@@ -24,5 +24,6 @@ authApp
 brokerApp
 loggerServiceApp
 frontApp
+mailerApp
 .idea
 db-data
