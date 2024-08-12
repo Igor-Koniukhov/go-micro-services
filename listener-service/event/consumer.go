@@ -113,10 +113,12 @@ func handlePayload(payload Payload) {
 func logEvent(entry Payload) error {
 	jsonData, err := json.MarshalIndent(entry, "", "\t")
 	logServiceURL := fmt.Sprintf("http://logger-service:%v/log", webPort)
+
 	req, err := http.NewRequest("POST", logServiceURL, bytes.NewBuffer(jsonData))
 	if err != nil {
 		return err
 	}
+
 	req.Header.Set("Content-Type", "application/json")
 	client := &http.Client{}
 	resp, err := client.Do(req)
